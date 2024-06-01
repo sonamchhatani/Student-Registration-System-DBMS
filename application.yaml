@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /project5_java
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: schhatani
+    password: ShonaDC123456
+    url: jdbc:oracle:thin:@castor.cc.binghamton.edu:1521:ACAD111
+
+
